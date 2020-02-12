@@ -1,0 +1,4 @@
+com\lazydev\project_manager\utilities\Constants.class
+com\lazydev\project_manager\controllers\HomeController.class
+com\lazydev\project_manager\Main.class
+com\lazydev\project_manager\model\TasksModel.class
