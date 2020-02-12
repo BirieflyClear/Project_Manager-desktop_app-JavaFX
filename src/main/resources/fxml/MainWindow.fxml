@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="1024.0" style="-fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lazydev.project_manager.controllers.MainWindowController">
+   <children>
+      <HBox fillHeight="true" spacing="12" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+          <VBox alignment="TOP_LEFT" fillWidth="true" prefWidth="512">
+            <children>
+               <VBox prefHeight="128.0">
+                   <Pane prefHeight="129.0" prefWidth="506.0" BorderPane.alignment="CENTER">
+                        <children>
+                        <TextField fx:id="tfSearch" layoutX="29.0" layoutY="83.0" prefHeight="34.0" prefWidth="260.0" promptText="Search Task or Project" style="-fx-background-color: #989AAD; -fx-background-radius: 1em;" styleClass="text-input" stylesheets="@../styles/fullpackstyling.css">
+                           <padding>
+                                <Insets left="15.0" />
+                           </padding>
+                   </TextField>
+                   <Label fx:id="lblName" layoutX="29.0" layoutY="14.0" text="Hi $user$" textFill="#fbfcfc">
+                       <font>
+                           <Font size="25.0" />
+                       </font>
+                   </Label>
+                            <Label fx:id="lblGreeting" layoutX="29.0" layoutY="50.0" text="Let's work!" textFill="#989aad" />
+                   </children>
+                   </Pane>
+               </VBox>
+               <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="384.0">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" />
+                 </content>
+               </ScrollPane>
+            </children>
+          </VBox>
+          <VBox alignment="TOP_RIGHT" prefWidth="512" spacing="12">
+              <Pane prefHeight="128.0" prefWidth="512.0">
+                  <children>
+
+                      <Label fx:id="lblGreeting1" layoutX="32.0" layoutY="64.0" text="\$project_description$" textFill="#989aad" />
+                      <Button fx:id="btnEX" alignment="CENTER" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#closeWindow" prefHeight="24.0" prefWidth="32.0" style="-fx-background-color: #989AAD; -fx-background-radius: 1em;" text="x" textAlignment="CENTER" textFill="#cdcdcd" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+                          <font>
+                              <Font size="13.0" />
+                          </font>
+                      </Button>
+                  </children>
+              </Pane>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="36.0" minHeight="7.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </VBox>
+      </HBox>
+   </children>
+</AnchorPane>
