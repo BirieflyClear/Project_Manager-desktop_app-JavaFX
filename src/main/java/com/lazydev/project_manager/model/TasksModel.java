@@ -1,15 +1,9 @@
 package com.lazydev.project_manager.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@ToString
-public class TasksModel {
+public @Data
+class TasksModel {
     
     private String title;
     private Boolean completed;
